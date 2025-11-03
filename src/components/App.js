@@ -16,9 +16,7 @@ const CachedAPI = () => {
         const data = await res.json();
 
         // Simulate filtering based on query
-        const filtered = data.filter(post =>
-          post.title.toLowerCase().includes(query.toLowerCase())
-        );
+        
 
         setPosts(filtered);
       } catch (err) {
@@ -33,14 +31,7 @@ const CachedAPI = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>📦 Cached API Data</h2>
-      <input
-        type="text"
-        placeholder="Search by title..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{ padding: "5px", marginBottom: "10px" }}
-      />
+      
 
       {loading ? (
         <p>Loading...</p>
