@@ -39,8 +39,9 @@ const CachedAPI = () => {
         <ul>
           {posts.slice(0, 10).map((post) => (
             <li key={post.id}>
-              <strong>{post.title}</strong>
-              <h4>{post.body}</h4>
+              <h4>{post.title}</h4>
+              <p>{post.body}</p>
+              
             </li>
           ))}
         </ul>
