@@ -43,7 +43,7 @@ const CachedAPI = () => {
       />
 
       {loading ? (
-        <p>Loading data...</p>
+        <p>Loading...</p>
       ) : (
         <ul>
           {posts.slice(0, 10).map((post) => (
